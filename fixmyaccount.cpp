@@ -29,7 +29,7 @@ void fixmyaccount::payment(const currency::transfer &transfer_data)
     eosio_assert(transfer_data.quantity.symbol == string_to_symbol(4, "EOS"), "Payment Error: You must pay in EOS.");
     eosio_assert(transfer_data.quantity.is_valid(), "Payment Error: Quantity is not valid.");
     
-    // 2.0 EOS service fee
+    // 1.0 EOS service fee
     auto service_fee = asset(10000); // 1.0000 EOS
     eosio_assert(transfer_data.quantity == service_fee, "Payment Error: Service fee is 1.0000 EOS.");
 

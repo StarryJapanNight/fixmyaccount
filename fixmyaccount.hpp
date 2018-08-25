@@ -4,14 +4,8 @@
  */
 #pragma once
 
-#include <string>
-//#include <vector>
-//#include <iostream>
-
-#include <eosiolib/asset.hpp>
 #include <eosiolib/currency.hpp>
-#include <eosiolib/eosio.hpp>
-#include <eosiolib/contract.hpp>
+
 
 namespace eosiosystem
 {
